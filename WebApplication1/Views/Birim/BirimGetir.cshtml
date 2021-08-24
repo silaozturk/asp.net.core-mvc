@@ -1,0 +1,13 @@
+﻿@model WebApplication1.Models.Birim
+@using (Html.BeginForm("BirimGuncelle", "Birim", FormMethod.Post))
+{
+    <br />
+    <b>Birim ID</b>
+    @Html.TextBoxFor(x => x.BirimID, new { @class = "form-control" })
+    <br />
+    <b>Departman Adı</b>
+    @Html.TextBoxFor(x => x.BirimAd, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Güncelle</button>
+}
